@@ -14,6 +14,7 @@
 		F60B7BCA1C3BC227007BF70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60B7BC81C3BC227007BF70C /* LaunchScreen.storyboard */; };
 		F60B7BD51C3BC228007BF70C /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B7BD41C3BC228007BF70C /* FilterTests.swift */; };
 		F60B7BE01C3BC228007BF70C /* FilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B7BDF1C3BC228007BF70C /* FilterUITests.swift */; };
+		F60B7BEE1C3BC52B007BF70C /* hudei.png in Resources */ = {isa = PBXBuildFile; fileRef = F60B7BED1C3BC52B007BF70C /* hudei.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F60B7BDB1C3BC228007BF70C /* FilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60B7BDF1C3BC228007BF70C /* FilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUITests.swift; sourceTree = "<group>"; };
 		F60B7BE11C3BC228007BF70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60B7BED1C3BC52B007BF70C /* hudei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hudei.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		F60B7BBE1C3BC227007BF70C /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				F60B7BED1C3BC52B007BF70C /* hudei.png */,
 				F60B7BBF1C3BC227007BF70C /* AppDelegate.swift */,
 				F60B7BC11C3BC227007BF70C /* ViewController.swift */,
 				F60B7BC31C3BC227007BF70C /* Main.storyboard */,
@@ -232,6 +235,7 @@
 				F60B7BCA1C3BC227007BF70C /* LaunchScreen.storyboard in Resources */,
 				F60B7BC71C3BC227007BF70C /* Assets.xcassets in Resources */,
 				F60B7BC51C3BC227007BF70C /* Main.storyboard in Resources */,
+				F60B7BEE1C3BC52B007BF70C /* hudei.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

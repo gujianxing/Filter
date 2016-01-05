@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Filter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="im8-He-aMQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoV-VP-C4i">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MxW-ks-YXx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wbl-v0-AXK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jqp-Ri-efy"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JoV-VP-C4i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DbS-o3-WNv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="im8-He-aMQ" secondAttribute="bottom" id="Hb4-gQ-YzE"/>
+                            <constraint firstAttribute="trailing" secondItem="JoV-VP-C4i" secondAttribute="trailing" id="TeB-53-tnU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JoV-VP-C4i" secondAttribute="bottom" id="UfD-QQ-LJ5"/>
+                            <constraint firstItem="im8-He-aMQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z2B-3s-Njq"/>
+                            <constraint firstItem="im8-He-aMQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b8m-4q-vZX"/>
+                            <constraint firstAttribute="trailing" secondItem="im8-He-aMQ" secondAttribute="trailing" id="o3z-n0-6ca"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="picture" destination="im8-He-aMQ" id="J3R-9f-J2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
